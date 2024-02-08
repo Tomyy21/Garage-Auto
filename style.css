@@ -231,6 +231,8 @@
 }
 
 
+/* -------------------LES SERVICES---------------------- */
+
 #services {
     display: flex;
     align-items: center;
@@ -250,7 +252,7 @@
 
 .service {
     text-align: center;
-    width: 25%;
+    width: 26%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -258,7 +260,25 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     padding: 20px;
     margin: 20px;
+    font-size: 14px;
+    height: 300px;
 }
+
+
+
+
+
+.serviceAvantage {
+    height: 450px;
+}
+.serviceAvantage2 {
+    height: 480px;
+}
+.serviceAvantage3 {
+    height: 400px;
+}
+
+
 
 .service i {
     font-size: 25px;
@@ -273,14 +293,85 @@
     margin-bottom: 10px;
 }   
 
-.service h3 {
+.depannage {
     margin-bottom: 10px;
     font-size: 18px;
+    transition: 0.5s;
 }
 
-.service p {
-    font-size: 12px;
+.carroserie {
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: 0.5s;
 }
+
+.depannageAvantage {
+    position: absolute;
+    margin-top: 50px;
+    transition: 0s;
+}
+
+.carroserieAvantage {
+    position: absolute;
+    margin-top: 50px;
+    transition: 0s;
+}
+
+
+
+.textdepannage {
+    font-size: 14px;
+}
+
+.textcarroserie {
+    font-size: 14px;
+}
+
+
+
+.textdepannageAvantage {
+    position: absolute;
+    visibility: hidden;
+    transition: 0s;
+}
+
+.textcarroserieAvantage {
+    position: absolute;
+    visibility: hidden;
+    transition: 0s;
+}
+
+.textdepannagelong {
+    visibility: hidden;
+    position: absolute;
+    width: 150px;
+    transition: 0s;
+}
+
+.textdecarroserielong {
+    visibility: hidden;
+    position: absolute;
+    width: 150px;
+    transition: 0s;
+    font-size: 13px;
+}
+
+.textdepannagelongAvantage {
+    margin-top: 82px;
+    visibility: visible;
+    font-size: 13px;
+    transition: 0s;
+}
+
+.textdecarroserielongAvantage {
+    margin-top: 82px;
+    visibility: visible;
+    font-size: 13px;
+    transition: 0s;
+}
+
+
+
 
 .service a {
     margin-top: 10px;
@@ -289,6 +380,12 @@
     border: 1px solid #ea1f33;
     font-size: 12px;
 }
+
+
+
+/* -------------------CONTACT----------------- */
+
+
 
 #contact {
     height: 100vh;
@@ -360,13 +457,23 @@
 
 }
 
+.read_more {
+    margin-top: 9px;
+    border: solid 1px #ea1f33;
+    padding: 5px 21px;
+    color: #ea1f33;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+
 /* Footer */
 
 
-footer {
-    border-radius: 45px 45px 0 0;
-    background: #ea1f33;
 
+footer {
+    background: #ea1f33;
 }
 
 .footerContainer {
@@ -400,7 +507,6 @@ footer {
 
 .footerBotom {
     background-color: #ccc;
-    border-radius: 25px 25px 0 0;
     padding: 20px;
     text-align: center;
 }
