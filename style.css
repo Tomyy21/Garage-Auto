@@ -36,6 +36,9 @@
     height: 50px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
  }
+ a {
+    cursor: pointer;
+ }
 
  header .logo {
     color: #ea1f33;
@@ -229,7 +232,60 @@
     font-size: 15px;
 
 }
+/* Voiture concerné */
 
+.DetailsCar {
+    display:none;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+#slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.detailstitle {
+    margin-left: 45%;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#slider img {
+    width: 600px;
+    height: 300px;
+}
+
+#precedent,
+#suivant {
+    margin: 100px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    font-size: 10px;
+    color: #ea1f33;
+    padding: 10px;
+    flex-direction: column;
+}
+
+#precedent {
+    left: 0;
+}
+
+#suivant {
+    right: 0;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant {
+    opacity: 1;
+}
 
 /* -------------------LES SERVICES---------------------- */
 
@@ -275,7 +331,7 @@
     height: 480px;
 }
 .serviceAvantage3 {
-    height: 400px;
+    height: 440px;
 }
 
 
@@ -305,6 +361,12 @@
     transition: 0.5s;
 }
 
+.Videange {
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
 .depannageAvantage {
     position: absolute;
     margin-top: 50px;
@@ -312,6 +374,12 @@
 }
 
 .carroserieAvantage {
+    position: absolute;
+    margin-top: 50px;
+    transition: 0s;
+}
+
+.VideangeAvantage {
     position: absolute;
     margin-top: 50px;
     transition: 0s;
@@ -326,6 +394,9 @@
 .textcarroserie {
     font-size: 14px;
 }
+.textVideange {
+    font-size: 14px;
+}
 
 
 
@@ -336,6 +407,11 @@
 }
 
 .textcarroserieAvantage {
+    position: absolute;
+    visibility: hidden;
+    transition: 0s;
+}
+.textVideangeAvantage {
     position: absolute;
     visibility: hidden;
     transition: 0s;
@@ -355,6 +431,13 @@
     transition: 0s;
     font-size: 13px;
 }
+.textVideangelong {
+    visibility: hidden;
+    position: absolute;
+    width: 150px;
+    transition: 0s;
+    font-size: 13px;
+}
 
 .textdepannagelongAvantage {
     margin-top: 82px;
@@ -364,6 +447,12 @@
 }
 
 .textdecarroserielongAvantage {
+    margin-top: 82px;
+    visibility: visible;
+    font-size: 13px;
+    transition: 0s;
+}
+.textVideangelongAvantage {
     margin-top: 82px;
     visibility: visible;
     font-size: 13px;
@@ -464,8 +553,13 @@
     color: #ea1f33;
     background-color: #fff;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
+.read_more:hover {
+    background-color: #ea1f33;
+    color: #fff;
+}
 
 
 /* Footer */
@@ -580,6 +674,10 @@ footer {
 
     #contact {
         height: auto;
+    }
+
+    #slider {
+        width: 100%;
     }
 
     .localisation_contact_div {

@@ -25,6 +25,7 @@
       </div>
       <ul class="menu">
         <li><a href="#home">Acceuil</a></li>
+        <li><a href="Detail.html">Details véhicules</a></li>
         <li><a href="#cars">Vehicules</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -103,14 +104,30 @@
 
           <li class="car">
             <div>
-              <img src="images/car6.jpg" />
+              <img src="images/proshe gt2 RS.jpg" />
             </div>
             <span>LAMBORGHINI</span>
             <span class="prix">300 000$</span>
-            <a href="#">ACHETER MAINTENANT</a>
+            <a class="porsheGt2">ACHETER MAINTENANT</a>
           </li>
         </ul>
       </div>
+
+
+
+
+    <div class="DetailsCar">
+      <h1 class="detailstitle">Le véhicule :</h1>
+        <div id="slider">
+          <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+          <img src="images/proshe gt2 RS.jpg" alt="cars" id="slide">
+          <div id="suivant" onclick="ChangeSlide(1)">></div>
+      </div>
+    </div>
+
+
+
+
     </section>
 
     <!-- --------Services-------------- -->
@@ -138,10 +155,11 @@
         </div>
         <div class="service service3">
           <i class="fa-solid fa-screwdriver-wrench"></i>
-          <h3>Videange</h3>
-          <p>
+          <h3 class="Videange">Videange</h3>
+          <p class="textVideange">
             Entretien impeccable.Offrez à votre moteur le soin qu'il mérite avec notre service de vidange professionnel et efficace.
           </p>
+          <p class="textVideangelong">Maintenez votre moteur en pleine forme avec notre service de vidange professionnel. Nous utilisons des produits de qualité et notre expertise pour assurer une performance optimale de votre véhicule. Prenez soin de votre moteur en nous confiant sa vidange régulière.</p>
           <button class="read_more read_more3">Lire plus</button>
         </div>
       </div>
@@ -184,7 +202,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="footer">
       <div class="footerContainer">
         <div class="footerNav">
           <ul>

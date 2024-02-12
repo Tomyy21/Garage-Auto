@@ -23,6 +23,12 @@ const carroserie = document.querySelector(".carroserie");
 const textcarroserie = document.querySelector(".textcarroserie");
 const textdecarroserielong = document.querySelector(".textdecarroserielong");
 
+const service3 = document.querySelector(".service3");
+const Videange = document.querySelector(".Videange");
+const textVideange = document.querySelector(".textVideange");
+const textVideangelong = document.querySelector(".textVideangelong");
+const divFooter = document.querySelector(".footer");
+
 LirePlus1.addEventListener("click", () => {
   service.classList.toggle("serviceAvantage");
   depannage.classList.toggle("depannageAvantage");
@@ -38,5 +44,39 @@ LirePlus2.addEventListener("click", () => {
 });
 
 LirePlus3.addEventListener("click", () => {
-  console.log("t'a clické 3");
+  service3.classList.toggle("serviceAvantage3");
+  Videange.classList.toggle("VideangeAvantage");
+  textVideange.classList.toggle("textVideangeAvantage");
+  textVideangelong.classList.toggle("textVideangelongAvantage");
+});
+
+divFooter.addEventListener("click", () => {
+  divFooter.style.display = "none";
+});
+
+// voiture concerné
+const porsheGt2 = document.querySelector(".porsheGt2");
+const DetailsCar = document.querySelector(".DetailsCar");
+const slide = [
+  "images/proshe gt2 RS.jpg",
+  "images/porshe gt2RS intérieur 1.jpg",
+  "images/porsche-911-gt2RS interieur 2.png",
+];
+let numero = 0;
+
+function ChangeSlide(sens) {
+  numero = numero + sens;
+  if (numero < 0) numero = slide.length - 1;
+  if (numero > slide.length - 1) numero = 0;
+  document.getElementById("slide").src = slide[numero];
+}
+
+porsheGt2.addEventListener("click", () => {
+  if (DetailsCar.style.opacity == 0) {
+    DetailsCar.style.display = "block";
+    DetailsCar.style.opacity = "100";
+  } else {
+    DetailsCar.style.display = "none";
+    DetailsCar.style.opacity = "0";
+  }
 });
